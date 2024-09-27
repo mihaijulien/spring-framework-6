@@ -24,6 +24,8 @@ public class Book {
     //// If we do not initialize it gives us an error in the BootstrapData class
     private Set<Author> authors = new HashSet<>();;
 
+    @ManyToOne
+    private Publisher publisher;
 
     public Long getId() {
         return id;
@@ -57,6 +59,14 @@ public class Book {
         this.authors = authors;
     }
 
+    public Publisher getPublisher() {
+        return publisher;
+    }
+
+    public void setPublisher(Publisher publisher) {
+        this.publisher = publisher;
+    }
+
     @Override
     public String toString() {
         return "Book{" +
@@ -83,5 +93,4 @@ public class Book {
     public int hashCode() {
         return getId() != null ? getId().hashCode() : 0;
     }
-
 }
