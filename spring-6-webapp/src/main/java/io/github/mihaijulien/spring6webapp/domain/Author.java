@@ -2,6 +2,7 @@ package io.github.mihaijulien.spring6webapp.domain;
 
 import jakarta.persistence.*;
 
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -16,7 +17,8 @@ public class Author {
     // An author can have multiple books and a book can have multiple authors (Many to Many)
     // It is better to use Set than List because each Book should be a unique item and a List allows duplicate items
     @ManyToMany(mappedBy = "authors")
-    private Set<Book> books;
+    //// If we do not initialize it gives us an error in the BootstrapData class
+    private Set<Book> books = new HashSet<>();;
 
     public Long getId() {
         return id;
