@@ -26,9 +26,11 @@
 
 MVC - common design pattern for GUI and Web Applications
 
-**Model** - Simple POJO with collection of properties which may or may not be used by the view
+**Model** - Simple POJO with collection of properties which may or may not be used by the view.
+
 **View** - Data as requested by the client. Implemented with JSP, Thymeleaf, Jackson etc. Can be
 HTML, JSON, XML, text, etc.
+
 **Controller** - Java class implemented to handle request mapping. Should be a "traffic cop" and 
 contain minimal business logic. Typically works in conjunction with a service, which contains business
 logic.
