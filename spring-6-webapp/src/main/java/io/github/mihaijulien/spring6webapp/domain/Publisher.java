@@ -11,7 +11,7 @@ public class Publisher {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String publicsherName;
+    private String publisherName;
     private String address;
     private String city;
     private String state;
@@ -28,12 +28,12 @@ public class Publisher {
         this.id = id;
     }
 
-    public String getPublicsherName() {
-        return publicsherName;
+    public String getPublisherName() {
+        return publisherName;
     }
 
-    public void setPublicsherName(String publicsherName) {
-        this.publicsherName = publicsherName;
+    public void setPublisherName(String publisherName) {
+        this.publisherName = publisherName;
     }
 
     public String getAddress() {

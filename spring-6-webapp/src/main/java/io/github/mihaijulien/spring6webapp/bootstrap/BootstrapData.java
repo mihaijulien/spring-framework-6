@@ -65,7 +65,7 @@ public class BootstrapData implements CommandLineRunner {
         noEJBSaved.getAuthors().add(rodSaved);
 
         Publisher publisher = new Publisher();
-        publisher.setPublicsherName("My Publisher");
+        publisher.setPublisherName("My Publisher");
         publisher.setAddress("123 Main");
         Publisher savedPublisher = publisherRepository.save(publisher);
 
