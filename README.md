@@ -34,3 +34,12 @@ HTML, JSON, XML, text, etc.
 **Controller** - Java class implemented to handle request mapping. Should be a "traffic cop" and 
 contain minimal business logic. Typically works in conjunction with a service, which contains business
 logic.
+
+#### Dependency Injection
+
+Dependency injection allows you to inject dependencies into an object instead of creating the object inside the object. 
+This makes the code more flexible and easy to test.
+
+The class being injected really has no responsability instantiating that object that is being injected.
+
+
