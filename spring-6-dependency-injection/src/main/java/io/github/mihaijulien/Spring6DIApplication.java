@@ -1,6 +1,6 @@
 package io.github.mihaijulien;
 
-import io.github.mihaijulien.spring6di.controller.MyController;
+import io.github.mihaijulien.spring6di.controller.withoutSpring.MyController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;

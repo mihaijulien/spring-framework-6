@@ -1,4 +1,4 @@
-package io.github.mihaijulien.spring6di.controller;
+package io.github.mihaijulien.spring6di.controller.withoutSpring;
 
 import io.github.mihaijulien.spring6di.services.GreetingService;
 import io.github.mihaijulien.spring6di.services.GreetingServiceImpl;

@@ -1,11 +1,8 @@
-package io.github.mihaijulien.spring6di.controller;
+package io.github.mihaijulien.spring6di.controller.withoutSpring;
 
-import io.github.mihaijulien.spring6di.services.GreetingService;
 import io.github.mihaijulien.spring6di.services.GreetingServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PropertyInjectedControllerTest {
 

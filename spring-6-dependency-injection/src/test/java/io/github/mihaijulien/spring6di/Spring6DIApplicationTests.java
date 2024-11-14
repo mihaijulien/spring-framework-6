@@ -1,6 +1,6 @@
 package io.github.mihaijulien.spring6di;
 
-import io.github.mihaijulien.spring6di.controller.MyController;
+import io.github.mihaijulien.spring6di.controller.withoutSpring.MyController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

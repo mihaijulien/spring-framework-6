@@ -1,8 +1,6 @@
-package io.github.mihaijulien.spring6di.controller;
+package io.github.mihaijulien.spring6di.controller.withoutSpring;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class MyControllerTest {
 
