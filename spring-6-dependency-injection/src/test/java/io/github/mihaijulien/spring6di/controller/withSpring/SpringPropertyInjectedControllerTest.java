@@ -3,6 +3,7 @@ package io.github.mihaijulien.spring6di.controller.withSpring;
 import io.github.mihaijulien.spring6di.controller.withoutSpring.PropertyInjectedController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 
 // Dependency Injection with Spring
@@ -12,6 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class SpringPropertyInjectedControllerTest {
 
+    @Qualifier("propertyGreetingService")
     // Spring, in order to perform dependency injection with properties, needs the @Autowired annotation
     @Autowired
     PropertyInjectedController propertyInjectedController;

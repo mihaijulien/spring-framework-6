@@ -1,6 +1,8 @@
 package io.github.mihaijulien.spring6di.controller.withSpring;
 
-import io.github.mihaijulien.spring6di.services.SpringGreetingServiceImpl;
+import io.github.mihaijulien.spring6di.services.GreetingService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 // Dependency Injection with Spring
@@ -8,9 +10,10 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class SpringConstructorInjectedController {
 
-    private final SpringGreetingServiceImpl greetingService;
+    @Autowired
+    private final GreetingService greetingService;
 
-    public SpringConstructorInjectedController(SpringGreetingServiceImpl greetingService) {
+    public SpringConstructorInjectedController(@Qualifier("springServiceImpl") GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 
